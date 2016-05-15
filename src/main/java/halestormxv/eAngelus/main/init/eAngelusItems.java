@@ -18,6 +18,8 @@ public class eAngelusItems
 	public static Item topazStone;
 	public static Item angelicDust;
 	public static Item mystalDust;
+	public static Item azuriteStone;
+	public static Item serpentineStone;
 	
 	public static void initItems() //illustrates both ways to register an item.
 	{	
@@ -26,6 +28,8 @@ public class eAngelusItems
 		demonic_ingot = registerItem(new Item().setUnlocalizedName("demonic_ingot").setCreativeTab(Reference.eaCreativeTab), "demonic_ingot");
 		//Gems
 		topazStone = registerItem(new EAItem("topazStone"), "topazStone");
+		azuriteStone = registerItem(new EAItem("azuriteStone"), "azuriteStone");
+		serpentineStone = registerItem(new EAItem("serpentineStone"), "serpentineStone");
 		
 		//Dusts
 		angelicDust = registerItem(new EAItem("angelicDust"), "angelicDust");
@@ -39,6 +43,8 @@ public class eAngelusItems
 		registerRender(topazStone);
 		registerRender(angelicDust);
 		registerRender(mystalDust);
+		registerRender(azuriteStone);
+		registerRender(serpentineStone);
 	}
 	
 	public static void registerRender(Item item)

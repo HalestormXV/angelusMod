@@ -2,9 +2,11 @@ package halestormxv.eAngelus.main.init;
 
 import halestormxv.eAngelus.blocks.AngelicBlock;
 import halestormxv.eAngelus.blocks.AngelicOre;
+import halestormxv.eAngelus.blocks.AzureiteOre;
 import halestormxv.eAngelus.blocks.DemonicBlock;
 import halestormxv.eAngelus.blocks.DemonicOre;
 import halestormxv.eAngelus.blocks.MystalCite;
+import halestormxv.eAngelus.blocks.SerpentineOre;
 import halestormxv.eAngelus.blocks.TopazOre;
 import halestormxv.eAngelus.items.EAItem;
 import halestormxv.eAngelus.main.Reference;
@@ -24,6 +26,8 @@ public class eAngelusBlocks
 	public static AngelicOre angelicOre;
 	public static DemonicOre demonicOre;
 	public static MystalCite mystalCite;
+	public static AzureiteOre azureite_Ore;
+	public static SerpentineOre serpentine_Ore;
 	
 	//Gems
 	public static TopazOre topazOre;
@@ -42,6 +46,8 @@ public class eAngelusBlocks
 		angelicOre = new AngelicOre();
 		demonicOre = new DemonicOre();
 		mystalCite = new MystalCite();
+		azureite_Ore = new AzureiteOre();
+		serpentine_Ore = new SerpentineOre();
 		
 		//Gems
 		topazOre = new TopazOre();
@@ -62,6 +68,8 @@ public class eAngelusBlocks
 		registerRender(angelicOre);
 		registerRender(demonicOre);
 		registerRender(mystalCite);
+		registerRender(azureite_Ore);
+		registerRender(serpentine_Ore);
 		
 		//Gems
 		registerRender(topazOre);

@@ -4,6 +4,8 @@ item.demonic_ingot.name=Demonic Ingot
 item.topazStone.name=Topaz Gem
 item.angelicDust.name=Angelic Dust
 item.mystalDust.name=Mystal Dust
+item.azuriteStone.name=Azurite Stone
+item.serpentineStone.name=Serpentine Stone
 
 #BLOCKS
 tile.angelic_block.name=Angelic Block
@@ -12,6 +14,8 @@ tile.demonicOre.name=Demonic Ore
 tile.angelicOre.name=Angelic Ore
 tile.topazOre.name=Topaz Ore
 tile.mystalCite.name=Mystal Cite
+tile.azureite_Ore.name=Azurite Ore
+tile.serpentine_Ore.name=Serpentine Ore
 
 #TABS
 itemGroup.eaCreativeTab=Elementum Angelus
