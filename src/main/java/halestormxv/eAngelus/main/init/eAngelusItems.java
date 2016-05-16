@@ -2,13 +2,20 @@ package halestormxv.eAngelus.main.init;
 
 import halestormxv.eAngelus.items.AngelicIngot;
 import halestormxv.eAngelus.items.EAItem;
+import halestormxv.eAngelus.items.ModItemAxe;
+import halestormxv.eAngelus.items.ModItemHoe;
+import halestormxv.eAngelus.items.ModItemMulti;
+import halestormxv.eAngelus.items.ModItemPick;
+import halestormxv.eAngelus.items.ModItemSpade;
+import halestormxv.eAngelus.items.ModItemSword;
 import halestormxv.eAngelus.main.Reference;
-import halestormxv.eAngelus.main.EAMain;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class eAngelusItems 
@@ -20,6 +27,21 @@ public class eAngelusItems
 	public static Item mystalDust;
 	public static Item azuriteStone;
 	public static Item serpentineStone;
+	
+	//Tools
+	public static Item serpentinePick;
+	public static Item serpentineSpade;
+	public static Item serpentineAxe;
+	public static Item serpentineHoe;
+	public static Item serpentineMulti;
+	
+	//Weapons
+	public static Item serpentineSword;
+	public static Item serpentineShield;
+	
+	
+	//Materials
+	public static ToolMaterial Serpentine = EnumHelper.addToolMaterial("Serpentine", 4, 1800, 10.0F, 9.0F, 25);
 	
 	public static void initItems() //illustrates both ways to register an item.
 	{	
@@ -34,7 +56,19 @@ public class eAngelusItems
 		//Dusts
 		angelicDust = registerItem(new EAItem("angelicDust"), "angelicDust");
 		mystalDust = registerItem(new EAItem("mystalDust"), "mystalDust");
+		
+		//Tools
+		serpentineHoe = registerItem(new ModItemHoe("serpentineHoe", Serpentine), "serpentineHoe");
+		serpentineSpade = registerItem(new ModItemSpade("serpentineSpade", Serpentine), "serpentineSpade");
+		serpentineAxe = registerItem(new ModItemAxe("serpentineAxe", Serpentine), "serpentineAxe");
+		serpentinePick = registerItem(new ModItemPick("serpentinePick", Serpentine), "serpentinePick");
+		serpentineMulti = registerItem(new ModItemMulti("serpentineMulti", Serpentine), "serpentineMulti");
+	
+		//Weapons
+		serpentineSword = registerItem(new ModItemSword("serpentineSword", Serpentine), "serpentineSword");
+		//serpentineShield = registerItem(new SerpentSword("serpentinePick", Serpentine), "serpentinePick");
 	}
+	
 	
 	public static void registerRenders()
 	{
@@ -45,6 +79,17 @@ public class eAngelusItems
 		registerRender(mystalDust);
 		registerRender(azuriteStone);
 		registerRender(serpentineStone);
+		
+		//Tools
+		registerRender(serpentinePick);
+		registerRender(serpentineSpade);
+		registerRender(serpentineAxe);
+		registerRender(serpentineHoe);
+		registerRender(serpentineMulti);	
+		
+		//Weapons
+		registerRender(serpentineSword);
+		//registerRender(serpentineShield);
 	}
 	
 	public static void registerRender(Item item)

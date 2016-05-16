@@ -7,6 +7,18 @@ item.mystalDust.name=Mystal Dust
 item.azuriteStone.name=Azurite Stone
 item.serpentineStone.name=Serpentine Stone
 
+#TOOLS
+item.serpentineHoe.name=Serpentine Hoe
+item.serpentineSpade.name=Serpentine Shovel
+item.serpentineAxe.name=Serpentine Axe
+item.serpentinePick.name=Serpentine Pick
+item.serpentineMulti.name=Serpentine Mattock
+
+
+#WEAPONS
+item.serpentineSword.name=Serpentine Blade
+
+
 #BLOCKS
 tile.angelic_block.name=Angelic Block
 tile.demonic_block.name=Demonic Block
