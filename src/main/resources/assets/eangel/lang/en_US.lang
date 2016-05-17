@@ -28,6 +28,17 @@ tile.topazOre.name=Topaz Ore
 tile.mystalCite.name=Mystal Cite
 tile.azureite_Ore.name=Azurite Ore
 tile.serpentine_Ore.name=Serpentine Ore
+tile.oTable.name=Obsidian Iron Table
+
+#ACHIEVEMENTS
+achievement.GetAngelicOre=Holier-Than-Thou!
+achievement.GetAngelicOre.desc=Find Angelic Ore.
+
+achievement.GetDemonicOre=Darkness In Ore
+achievement.GetDemonicOre.desc=Find Demonic Ore.
+
+achievement.MakeAngelicIngot=By Purest Metal
+achievement.MakeAngelicIngot.desc=Smelt Angelic Ore into Angelic Ingot.
 
 #TABS
 itemGroup.eaCreativeTab=Elementum Angelus

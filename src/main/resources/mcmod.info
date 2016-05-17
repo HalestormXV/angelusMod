@@ -9,7 +9,7 @@
   "updateUrl": "",
   "authorList": ["HalestormXV"],
   "credits": "HalestormXV",
-  "logoFile": "logo.png",
+  "logoFile": "eAngelus.png",
   "screenshots": [],
   "dependencies": ["mod_MinecraftForge"]
 }

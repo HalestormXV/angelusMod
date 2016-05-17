@@ -16,12 +16,22 @@ import net.minecraftforge.fml.common.IWorldGenerator;
 public class E_AngWorldGen implements IWorldGenerator {
 	//@formatter:off
 
+	private WorldGenerator gen_AngelicOre;
+	private WorldGenerator gen_AzureiteOre;
+	private WorldGenerator gen_DemonicOre;
+	private WorldGenerator gen_MystalCite;
+	private WorldGenerator gen_SerpentineOre;
 	private WorldGenerator gen_TopazOre;
 
 	//@formatter:on
 
 	public E_AngWorldGen()
 	{
+		this.gen_AngelicOre = new WorldGenMinable(eAngelusBlocks.angelicOre.getDefaultState(), 2, BlockMatcher.forBlock(Blocks.stone));
+		this.gen_AzureiteOre = new WorldGenMinable(eAngelusBlocks.azureite_Ore.getDefaultState(), 4, BlockMatcher.forBlock(Blocks.stone));
+		this.gen_DemonicOre = new WorldGenMinable(eAngelusBlocks.demonicOre.getDefaultState(), 2, BlockMatcher.forBlock(Blocks.stone));
+		this.gen_MystalCite = new WorldGenMinable(eAngelusBlocks.mystalCite.getDefaultState(), 3, BlockMatcher.forBlock(Blocks.stone));
+		this.gen_SerpentineOre = new WorldGenMinable(eAngelusBlocks.serpentine_Ore.getDefaultState(), 3, BlockMatcher.forBlock(Blocks.stone));
 		this.gen_TopazOre = new WorldGenMinable(eAngelusBlocks.topazOre.getDefaultState(), 6, BlockMatcher.forBlock(Blocks.stone));
 	}
 
@@ -32,7 +42,13 @@ public class E_AngWorldGen implements IWorldGenerator {
 		switch (world.provider.getDimension())
 		{
 		case 0: //Overworld
-			this.runGenerator(this.gen_TopazOre, world, random, chunkX, chunkZ, 16, 12, 128); //Chances to Spawn, Min Height, Max Height
+			//Chances to Spawn, Min Height, Max Height
+			this.runGenerator(this.gen_AngelicOre, world, random, chunkX, chunkZ, 6, 72, 128);
+			this.runGenerator(this.gen_AzureiteOre, world, random, chunkX, chunkZ, 12, 24, 128); 
+			this.runGenerator(this.gen_DemonicOre, world, random, chunkX, chunkZ, 6, 8, 16); 
+			this.runGenerator(this.gen_MystalCite, world, random, chunkX, chunkZ, 8, 12, 128); 
+			this.runGenerator(this.gen_SerpentineOre, world, random, chunkX, chunkZ, 13, 12, 48); 
+			this.runGenerator(this.gen_TopazOre, world, random, chunkX, chunkZ, 16, 12, 128);
 			break;
 			
 		case -1: //Nether

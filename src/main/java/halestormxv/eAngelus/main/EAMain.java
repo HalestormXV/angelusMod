@@ -2,8 +2,10 @@ package halestormxv.eAngelus.main;
 
 import org.apache.logging.log4j.Logger;
 
+import halestormxv.eAngelus.main.handlers.EA_FuelHandler;
 import halestormxv.eAngelus.main.proxy.CommonProxy;
 import halestormxv.eAngelus.main.world.E_AngWorldGen;
+import net.minecraft.init.Items;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -37,6 +39,8 @@ public class EAMain
 	{
 		this.proxy.init(event);
 		GameRegistry.registerWorldGenerator(new E_AngWorldGen(), 0);
+		GameRegistry.registerFuelHandler(new EA_FuelHandler());
+		//EARemoveRecipes.removeCraftingRecipes(Items.diamond_sword);
 	}
 	
 	@EventHandler

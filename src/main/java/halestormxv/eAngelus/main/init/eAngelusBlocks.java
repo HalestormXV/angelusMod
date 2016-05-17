@@ -6,6 +6,7 @@ import halestormxv.eAngelus.blocks.AzureiteOre;
 import halestormxv.eAngelus.blocks.DemonicBlock;
 import halestormxv.eAngelus.blocks.DemonicOre;
 import halestormxv.eAngelus.blocks.MystalCite;
+import halestormxv.eAngelus.blocks.ObsidianIronTable;
 import halestormxv.eAngelus.blocks.SerpentineOre;
 import halestormxv.eAngelus.blocks.TopazOre;
 import halestormxv.eAngelus.items.EAItem;
@@ -28,7 +29,8 @@ public class eAngelusBlocks
 	public static MystalCite mystalCite;
 	public static AzureiteOre azureite_Ore;
 	public static SerpentineOre serpentine_Ore;
-	
+	public static ObsidianIronTable oTable;
+
 	//Gems
 	public static TopazOre topazOre;
 	
@@ -41,7 +43,8 @@ public class eAngelusBlocks
 		angelic_block.setUnlocalizedName("angelic_block");
 		angelic_block.setCreativeTab(Reference.eaCreativeTab);
 		demonic_block = new DemonicBlock();
-		
+		oTable = new ObsidianIronTable("oTable", Material.iron);
+
 		//Ores
 		angelicOre = new AngelicOre();
 		demonicOre = new DemonicOre();
@@ -51,12 +54,7 @@ public class eAngelusBlocks
 		
 		//Gems
 		topazOre = new TopazOre();
-	}
-	
-	public static void register()
-	{
-		
-	}
+	}	
 	
 	public static void registerRenders()
 	{
@@ -70,6 +68,7 @@ public class eAngelusBlocks
 		registerRender(mystalCite);
 		registerRender(azureite_Ore);
 		registerRender(serpentine_Ore);
+		registerRender(oTable);
 		
 		//Gems
 		registerRender(topazOre);

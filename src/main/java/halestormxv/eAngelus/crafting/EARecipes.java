@@ -63,6 +63,11 @@ public class EARecipes
 				new Object [] {
 				eAngelusBlocks.angelic_block
 				});
+		
+		
+		//Smelting Recipes
+		GameRegistry.addSmelting(eAngelusBlocks.angelicOre, new ItemStack(eAngelusItems.angelic_ingot), 13.0F);
+		GameRegistry.addSmelting(eAngelusBlocks.demonicOre, new ItemStack(eAngelusItems.demonic_ingot), 13.0F);
 	}
 
 }

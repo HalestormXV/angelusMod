@@ -1,5 +1,6 @@
 package halestormxv.eAngelus.main.proxy;
 
+import halestormxv.eAngelus.achievements.EA_Achievements;
 import halestormxv.eAngelus.crafting.EARecipes;
 import halestormxv.eAngelus.main.init.eAngelusBlocks;
 import halestormxv.eAngelus.main.init.eAngelusItems;
@@ -17,6 +18,7 @@ public class ClientProxy extends CommonProxy
 		eAngelusItems.initItems();
 		eAngelusBlocks.initBlocks();
 		EARecipes.initRecipes();
+		EA_Achievements.AchievementRegistry();
 	}
 	
 	@Override
